@@ -1,17 +1,17 @@
 #!/usr/bin/env node
-program = require('commander')
-Swagger2ToPostman = require('./swagger2-to-postman')
+const program = require('commander');
+const Swagger2ToPostman = require('./swagger2-to-postman');
+const fs = require('fs');
 
-convert = (input) => {
-  var fs = require('fs');
-  fs.readFile(input, 'utf8', function (err, text) {
-    var result = new Swagger2ToPostman().convert(JSON.parse(text));
+const convert = (input) => {
+  fs.readFile(input, 'utf8', (err, text) => {
+    let result = new Swagger2ToPostman().convert(JSON.parse(text));
     console.log(JSON.stringify(result.collection));
   });
 }
 
 program
   .option('-i, --input <input_file>', 'swagger.json')
-  .parse(process.argv)
+  .parse(process.argv);
 
-convert(program.input)
+convert(program.input);
