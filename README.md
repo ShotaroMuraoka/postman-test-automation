@@ -23,6 +23,6 @@
 プロジェクトで使って死にそうになったから。。
 
 ## 参考資料
-https://qiita.com/developer-kikikaikai/items/74cedc67643ca93d2e0b
-https://qiita.com/moaikids/items/1e05ef2595504689fe3e
+https://qiita.com/developer-kikikaikai/items/74cedc67643ca93d2e0b  
+https://qiita.com/moaikids/items/1e05ef2595504689fe3e  
 https://living-sun.com/ja/arrays/70915-tv4-json-schema-array-of-objects-validation-arrays-json-jsonschema-tv4.html
